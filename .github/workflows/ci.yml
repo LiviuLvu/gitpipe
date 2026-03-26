@@ -90,7 +90,7 @@ jobs:
           path: coverage/
 
       - name: SonarCloud Scan
-        uses: SonarSource/sonarcloud-github-action@master
+        uses: SonarSource/sonarcloud-github-action@v3
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # auto-provided, enables PR decoration
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}     # set in repo Settings → Secrets
